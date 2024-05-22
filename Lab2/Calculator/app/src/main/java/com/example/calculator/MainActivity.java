@@ -80,8 +80,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int firstNum = Integer.parseInt(edtFirstNum.getText().toString());
                 int secondNum = Integer.parseInt(edtSecondNum.getText().toString());
-                int rs = firstNum / secondNum;
-                txtResult.setText(String.format("%s", rs));
+                if(secondNum == 0) {
+                    txtResult.setText("");
+                } else {
+                    float rs = (float) firstNum / secondNum;
+                    txtResult.setText(String.format("%s", rs));
+                }
             }
         });
 
