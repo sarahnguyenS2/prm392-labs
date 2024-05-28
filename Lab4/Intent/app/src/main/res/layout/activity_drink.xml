@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drinkLinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Drink Order"
+        app:titleTextColor="#FFFFFF" />
+
+    <RadioGroup
+        android:id="@+id/rg_drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/rb_pepsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pepsi" />
+
+        <RadioButton
+            android:id="@+id/rb_heineken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heineken" />
+
+        <RadioButton
+            android:id="@+id/rb_tiger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiger" />
+
+        <RadioButton
+            android:id="@+id/rb_saigon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sài Gòn Đỏ" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnOrderDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Đặt món"
+        android:textColor="#222222"
+        android:textSize="20sp"
+        app:backgroundTint="@null" />
+</LinearLayout>
